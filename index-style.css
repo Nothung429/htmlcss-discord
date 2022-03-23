@@ -6,13 +6,11 @@
 }
 body {
     width: 100%;
-    background-color: aqua;
     font-family: 'Poppins', sans-serif;
 }
 
 /*------ contenitore della pagina ------*/
 .frame {
-    background-color: lightgreen;
     max-width: 1200px;
     margin: auto;
 }
@@ -38,11 +36,11 @@ header::after {
 .login {
     text-align: right;
 }
-#login ,#download-apple {
+#access {
     background-color: white;
     border-radius: 20px;
     border: 1px transparent;
-    padding: 8px 10px;
+    padding: 8px 12px;
 }
 
 /*------ navigazione della pagina ------*/
@@ -70,24 +68,70 @@ header::after {
     background-repeat: no-repeat;
 }
 
+/*------ main title della pagina ------*/
 .hero {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50% , -50%);
 }
 .hero h1 ,.hero p ,.hero nav {
     text-align: center;
 }
 h1 {
     color: white;
-    font-size: 54px;
-    padding-bottom: 30px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 .hero p {
     color: white;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 .hero nav input{
     margin: 0 15px;
 }
+#download-apple ,#new-page {
+    border-radius: 20px;
+    border: 1px transparent;
+    padding: 12px 16px;
+}
+#download-apple {
+    background-color: white;
+}
+#new-page {
+    background-color: rgb(35, 39, 42);
+    color: white;
+}
+
+/*------ main article della pagina ------*/
+.box1 ,.box2 ,.box3 ,.box4 {
+    padding: 100px 0;
+}
+.background2 {
+    background-color: lightgrey;
+    width: 100%;
+}
+.box1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.caption {
+    max-width: 40%;
+    float: left;
+}
+.img {
+    max-width: 60%;
+    float: left;
+}
+.img img {
+    width: 100%;
+}
+.caption h2 {
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+
+
