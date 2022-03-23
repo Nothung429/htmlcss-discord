@@ -107,10 +107,10 @@ h1 {
 }
 
 /*------ main della pagina ------*/
-.background1 {
+/* .background1 {
     background-color: red;
     width: 100%;
-}
+} */
 .background2 {
     background-color: lightgrey;
     width: 100%;
@@ -129,6 +129,9 @@ h1 {
     vertical-align: middle;
     margin: 0 50px;
     width: 30%;
+}
+.caption-top {
+    text-align: center;
 }
 .caption-left {
     float: left;
