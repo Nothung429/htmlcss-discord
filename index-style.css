@@ -5,31 +5,30 @@
     box-sizing: border-box;
 }
 body {
+    width: 100%;
     background-color: aqua;
     font-family: 'Poppins', sans-serif;
 }
+
+/*------ contenitore della pagina ------*/
 .frame {
     background-color: lightgreen;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
 }
+
+/*------ header della pagina ------*/
 header {
     padding-top: 20px;
-    background-color: rgb(49, 97, 224);
+    background-image: url(img/jumbo.png);
 }
 header::after {
     content: "";
     display: table;
     clear: both;
 }
-.main-nav li ,.main-nav li a {
-    display: inline-block;
-}
-.main-nav li a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-}
+
+/*------ logo e login della pagina ------*/
 .logo ,.main-nav ,.login {
     float: left;
 }
@@ -39,22 +38,56 @@ header::after {
 .login {
     text-align: right;
 }
-#login {
+#login ,#download-apple {
     background-color: white;
     border-radius: 20px;
     border: 1px transparent;
     padding: 8px 10px;
 }
+
+/*------ navigazione della pagina ------*/
+.main-nav li ,.main-nav li a {
+    display: inline-block;
+}
+.main-nav li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
 .main-nav {
-    width: 60%;
+    width: calc(60% - 20px);
     text-align: center;
-    padding: 5px;
+    margin: 5px;
 }
 
+/*------ main della pagina ------*/
 .jumbotron {
+    position: relative;
     height: 500px;
     width: 100%;
     background-image: url(img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero h1 ,.hero p ,.hero nav {
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-size: 54px;
+    padding-bottom: 30px;
+}
+.hero p {
+    color: white;
+    font-size: 18px;
+}
+.hero nav input{
+    margin: 0 15px;
 }
