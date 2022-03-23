@@ -28,7 +28,7 @@ header::after {
 }
 
 /*------ header logo and login ------*/
-.logo ,.main-nav ,.login {
+.logo ,.header-nav ,.login {
     float: left;
 }
 .logo ,.login {
@@ -45,17 +45,17 @@ header::after {
 }
 
 /*------ header navigation ------*/
-.main-nav {
+.header-nav {
     width: calc(60% - 20px);
     text-align: center;
     margin: 5px;
 }
-.main-nav li a {
+.header-nav li a {
     margin: 0 10px;
     text-decoration: none;
     color: white;
 }
-.main-nav li ,.main-nav li a {
+.header-nav li ,.header-nav li a {
     display: inline-block;
 }
 
@@ -122,7 +122,7 @@ h1 {
 
 /*------ main article ------*/
 .box {
-    padding: 200px 0;
+    padding: 140px 0;
 }
 .box::after {
     content: "";
@@ -194,3 +194,40 @@ h1 {
 .background-footer {
     background-color: rgb(35, 39, 42);
 }
+h4 {
+    color: rgb(114, 137, 218);
+}
+.credits::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.credits {
+    padding: 80px 0 20px 0;
+}
+.credits .social {
+    color: rgb(114, 137, 218);
+    width: 20%;
+    margin-right: 120px;
+    float: left;
+}
+.footer-nav {
+    width: calc(100% / 5 - 120px);
+    margin: 0 40px;
+    float: left;
+}
+.footer-nav li {
+    margin: 10px 0;
+}
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+}
+.blue {
+    height: 5px;
+    background-color: red;
+}
+.red {
+    color: red;
+}
+
