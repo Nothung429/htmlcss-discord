@@ -26,7 +26,7 @@ header::after {
     clear: both;
 }
 
-/*------ logo e login della pagina ------*/
+/*------ header logo e login della pagina ------*/
 .logo ,.main-nav ,.login {
     float: left;
 }
@@ -43,7 +43,7 @@ header::after {
     padding: 8px 12px;
 }
 
-/*------ navigazione della pagina ------*/
+/*------ header navigazione della pagina ------*/
 .main-nav li ,.main-nav li a {
     display: inline-block;
 }
@@ -58,7 +58,7 @@ header::after {
     margin: 5px;
 }
 
-/*------ main della pagina ------*/
+/*------ jumbotron ------*/
 .jumbotron {
     position: relative;
     height: 500px;
@@ -68,7 +68,7 @@ header::after {
     background-repeat: no-repeat;
 }
 
-/*------ main title della pagina ------*/
+/*------ jumbotron title ------*/
 .hero {
     position: absolute;
     top: 50%;
@@ -88,6 +88,8 @@ h1 {
     font-size: 18px;
     margin-bottom: 20px;
 }
+
+/*------ jumbotron download ------*/
 .hero nav input{
     margin: 0 15px;
 }
@@ -104,15 +106,21 @@ h1 {
     color: white;
 }
 
-/*------ main article della pagina ------*/
-.box1 ,.box2 ,.box3 ,.box4 {
-    padding: 100px 0;
+/*------ main della pagina ------*/
+.background1 {
+    background-color: red;
+    width: 100%;
 }
 .background2 {
     background-color: lightgrey;
     width: 100%;
 }
-.box1::after {
+
+/*------ main article della pagina ------*/
+.box {
+    padding: 100px 0;
+}
+.box::after {
     content: "";
     display: table;
     clear: both;
@@ -121,16 +129,18 @@ h1 {
     max-width: 40%;
     float: left;
 }
+.caption h2 {
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+/*------ main img della pagina ------*/
 .img {
     max-width: 60%;
     float: left;
 }
 .img img {
     width: 100%;
-}
-.caption h2 {
-    font-size: 40px;
-    padding-top: 40px;
 }
 
 
