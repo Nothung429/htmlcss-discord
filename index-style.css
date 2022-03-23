@@ -4,3 +4,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: aqua;
+    font-family: 'Poppins', sans-serif;
+}
+.frame {
+    background-color: lightgreen;
+    max-width: 1000px;
+    margin: auto;
+}
+header {
+    padding-top: 20px;
+    background-color: rgb(49, 97, 224);
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-nav li ,.main-nav li a {
+    display: inline-block;
+}
+.main-nav li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo ,.main-nav ,.login {
+    float: left;
+}
+.logo ,.login {
+    width: 20%;
+}
+.login {
+    text-align: right;
+}
+#login {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px transparent;
+    padding: 8px 10px;
+}
+.main-nav {
+    width: 60%;
+    text-align: center;
+    padding: 5px;
+}
+
+.jumbotron {
+    height: 500px;
+    width: 100%;
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
